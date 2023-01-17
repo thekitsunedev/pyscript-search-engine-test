@@ -6,7 +6,7 @@ from pyodide import open_url
 with open_url("https://raw.githubusercontent.com/loczylevi/Kemiai_Elemek/main/tablazat.txt") as file:
     search_data = []
     for line in file:
-        search_data.append(line.strip().split(","))
+        search_data.append(line.strip().split(";"))
     search_data.pop(0)
 
 output_ids = []
